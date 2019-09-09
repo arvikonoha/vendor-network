@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import './sidepane.css'
 
 function Sidepane(){
   let [isSidepane, toggleSidepane] = useState(false);

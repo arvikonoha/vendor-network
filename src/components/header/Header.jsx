@@ -1,7 +1,6 @@
 import React from "react";
-import MainLogo from "./MainLogo";
-import Navbar from "./Navbar";
-import "./style.css";
+import MainLogo from "./mainlogo/MainLogo";
+import Navbar from "./navbar/Navbar";
 
 const Header = () => (
   <header id="main-header">
