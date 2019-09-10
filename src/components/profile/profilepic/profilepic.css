@@ -1,0 +1,83 @@
+.profile-images {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.profile-image > img{
+  width: 100%;
+}
+
+.profile-image > img.ncurr{
+  position: absolute;
+  opacity: 0;
+}
+
+.profile-image > img.curr{
+  opacity: 1;
+  transition: .5s opacity ease-in-out;
+}
+
+.right-icon,.left-icon{
+  display: inline-block;
+  position: absolute;
+  background-color: #f8f8f88c;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  opacity: 0;
+  transition: .3s ease-in-out all;
+  cursor: pointer;
+}
+
+.right-icon:hover,.left-icon:hover{
+  background-color: #f8f8f8e7;
+  transition: all .3s ease-in-out;
+}
+
+.right-icon{
+  right: 0%;
+}
+
+.left-icon{
+  left: 0%;
+  transform: rotate(180deg);
+}
+
+.profile-images:hover .left-icon,.profile-images:hover .right-icon{
+  opacity: 1;
+  transition: .3s ease-in-out all;
+}
+
+.profile-images:hover .left-icon{
+  left: 5%;
+}
+
+.profile-images:hover .right-icon{
+  right: 5%;
+}
+
+.slide-tracker{
+  display: flex;
+  justify-content: center;
+}
+
+.slide-tracker .slide-dot{
+  background-color: #f8f8f8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  border: #101010 2px solid; 
+  transition: all ease-in-out .5s;
+}
+
+.slide-tracker .slide-dot.current{
+  background-color: #101010;
+  transition: all ease-in-out .5s;
+}

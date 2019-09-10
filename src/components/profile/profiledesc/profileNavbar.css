@@ -1,0 +1,12 @@
+.profile-nav li{
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  color: rgb(143, 143, 143);
+}
+
+.profile-nav li.active{
+  color: #101010;
+}
