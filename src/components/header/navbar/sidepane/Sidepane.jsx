@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-router-dom'
 import './sidepane.css'
 
 function Sidepane(){
@@ -10,10 +11,10 @@ function Sidepane(){
     return isSidepane ? "hamberger cross":"hamberger"
   }
   return <ul className={setSidepane()}>
-  <li> <a href="">Home</a> </li>
-  <li> <a href="">Services</a> </li>
-  <li> <a href="">Help</a> </li>
-  <li> <a href=""> Login/Register</a></li>
+  <li> <Link to="/">Home</Link> </li>
+  <li> <Link to="/services">Services</Link> </li>
+  <li> <Link to="/profile">About</Link> </li>
+  <li> <Link to="/login"> Login/Register</Link></li>
   <li>
   <div
     className={setCross()}

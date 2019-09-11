@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import Sidepane from "./sidepane/Sidepane"
 import "./navbar.css"
 
@@ -9,27 +10,27 @@ function Navbar() {
       <ul>
         <li className="pd-15-0 hide-sm">
           <div className="bcm-anim"></div>
-          <a href="" className="pd-15">
+          <Link to="/" className="pd-15">
             Home
-          </a>
+          </Link>
         </li>
         <li className="pd-15-0 hide-sm">
           <div className="bcm-anim"></div>
-          <a href="" className="pd-15">
+          <Link to="/services" className="pd-15">
             Services
-          </a>
+          </Link>
         </li>
         <li className="pd-15-0 hide-sm">
           <div className="bcm-anim"></div>
-          <a href="" className="pd-15">
+          <Link to="/profile" className="pd-15">
             About
-          </a>
+          </Link>
         </li>
         <li className="pd-15-0 hide-sm">
           <div className="bcm-anim"></div>
-          <a href="" className="pd-15">
+          <Link to="login" className="pd-15">
             Login/Register
-          </a>
+          </Link>
         </li>
         <Sidepane/>
       </ul>

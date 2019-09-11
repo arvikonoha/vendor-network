@@ -1,5 +1,6 @@
 .profile-images {
-  position: relative;
+  position: sticky;
+  top: 0%;
   display: flex;
   text-align: center;
   align-items: center;
@@ -80,4 +81,15 @@
 .slide-tracker .slide-dot.current{
   background-color: #101010;
   transition: all ease-in-out .5s;
+}
+
+@media (max-width:600px){
+  .profile-images{
+    position: relative;
+    height: 365px;
+  }
+
+  .right-icon,.left-icon{
+    top: 40%;
+  }
 }
