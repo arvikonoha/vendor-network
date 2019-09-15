@@ -1,0 +1,32 @@
+.welcome-container,.service-container{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap; 
+  margin: auto;
+}
+
+.service-container{
+  width: 90%;
+}
+
+#service-selection{
+  height: 700px;
+}
+
+#service-selection h2,#service-sort h2{
+  width: 95%;
+  margin: auto;
+  position: relative;
+  font-size: 40px;
+  padding-top: 20px;
+  margin-bottom: 100px;
+}
+
+#service-selection h2::after,#service-sort h2::after{
+  content: '';
+  position: absolute;
+  left: 10%;
+  top: 90px;
+  width: 250px;
+  border-bottom: 3px solid black;
+}

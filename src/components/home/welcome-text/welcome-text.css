@@ -1,0 +1,31 @@
+.welcome-text{
+  flex: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  height: 700px;
+  padding:50px;
+}
+
+.welcome-text h2{
+  position: relative;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.welcome-text h2::after{
+  content: '';
+  position: absolute;
+  left: 10%;
+  top: 90px;
+  width: 250px;
+  border-bottom: 3px solid black;
+}
+
+.welcome-text p{
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #313131;
+}

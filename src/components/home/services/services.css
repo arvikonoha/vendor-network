@@ -1,0 +1,107 @@
+.service-card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  flex: 200px;
+  height: 400px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+  filter: saturate(.5);
+  transition: .5s all ease-in-out;
+}
+
+.service-card:hover{
+  filter: saturate(1);
+}
+
+.service-card:nth-child(1){
+  background: url(./images/photoQuery6.jpg) center center/cover no-repeat;
+}
+
+.service-card::after{
+  color: white;
+  padding: 5px 10px;
+  opacity: 1;
+  transition: .5s all ease-in-out;
+}
+.service-card:nth-child(1)::after{
+  content: 'Photographers';
+  position: absolute;
+  font-size: 25px;
+  top: 25%;
+  font-weight: bold;
+  right: -70px;
+  transform: rotate(-90deg);
+}
+
+.service-card:nth-child(2){
+  background: url(./images/corousel-items6.jpg) center center/cover no-repeat;
+}
+
+.service-card:nth-child(2)::after{
+  content: 'Caterers';
+  position: absolute;
+  font-size: 25px;
+  top: 15%;
+  font-weight: bold;
+  right: -35px;
+  transform: rotate(-90deg);
+}
+
+.service-card:nth-child(3){
+  background: url(./images/musicalQuery1.jpg) center center/cover no-repeat;
+}
+
+.service-card:nth-child(3)::after{
+  content: 'Musicals';
+  position: absolute;
+  font-size: 25px;
+  top: 15%;
+  font-weight: bold;
+  right: -35px;
+  transform: rotate(-90deg);
+}
+
+.service-card:nth-child(4){
+  background: url(./images/card8.jpg) center center/cover no-repeat;
+}
+
+.service-card:nth-child(4)::after{
+  content: 'Decorators';
+  position: absolute;
+  font-size: 25px;
+  top: 18%;
+  font-weight: bold;
+  right: -50px;
+  transform: rotate(-90deg);
+}
+
+.service-card a{
+  position: relative;
+  font-weight: 500;
+  top: 0px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: transparent;
+  color: black;
+  background-color: #ffffff96;
+  opacity: 0;
+  transition: .3s all ease-in-out;
+}
+
+.service-card i{
+  font-size: 15px
+}
+
+.service-card a:hover{
+  background-color: white;
+  color: black;
+  transition: .5s all ease-in-out;
+}
+
+.service-card:hover a{
+  opacity: 1;
+  top: -30px;
+  transition: .3s all ease-in-out;
+}

@@ -16,6 +16,8 @@ function UserDetails(){
             <br/>
             <input type="text" placeholder="Enter your Pin" name="user-pin"/>
             <br/>
+            <input type="date" placeholder="Enter the event date" name="event-date"/>
+            <br/>
             <button>Services Selected</button>
             <button type="submit">Submit</button>
           </form>

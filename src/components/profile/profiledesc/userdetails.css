@@ -32,6 +32,10 @@
   transition: .2s all ease-in-out;
 }
 
+.user-details input[type='date']{
+  color: #686868;
+}
+
 .user-details input:focus,.user-details textarea:focus{
   color: #f8f8f8;
   background-color: #333;
