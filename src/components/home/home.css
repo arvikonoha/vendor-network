@@ -10,7 +10,7 @@
 }
 
 #service-selection{
-  height: 700px;
+  min-height: 700px;
 }
 
 #service-selection h2,#service-sort h2{
@@ -23,10 +23,16 @@
 }
 
 #service-selection h2::after,#service-sort h2::after{
-  content: '';
   position: absolute;
+  content: '';
   left: 10%;
   top: 90px;
   width: 250px;
   border-bottom: 3px solid black;
+}
+
+@media (max-width:500px){
+  #service-selection h2::after,#service-sort h2::after{
+    top: 160px;
+  }
 }

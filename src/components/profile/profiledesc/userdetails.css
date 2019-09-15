@@ -16,7 +16,7 @@
 }
 
 .user-details form label{
-  font-size: 20px;
+  margin-top: 10px; 
 }
 
 .user-details input,.user-details textarea{
