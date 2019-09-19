@@ -1,0 +1,66 @@
+.profile-services li.djservices{
+  position: relative;
+  padding: 40px;
+  color: white;
+  filter: saturate(.4);
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(0, 13, 20);
+}
+
+.profile-services li.djservices > i{
+  right: 0;
+  top: 30%;
+  position: absolute;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.445);
+  transition: .5s all ease-in-out;
+}
+
+.profile-services li.djservices:hover > i{
+  right: 20px;
+  opacity: 1;
+  transition: .5s all ease-in-out;
+  cursor: pointer;
+}
+
+.profile-services li.djservices.procession{
+  background: url(./procession.jpg) center center/cover no-repeat;
+}
+
+.profile-services li.djservices.parties{
+  background: url(./card12.jpg) center center/cover no-repeat;
+}
+
+.profile-services li.djservices input{
+  border: 0;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 250px;
+  font-family: monospace;
+}
+
+.profile-services li.djservices input:focus{
+  background-color: rgb(0, 24, 41);
+  color: rgb(183, 200, 255);
+}
+
+.profile-services li.djservices button{
+  padding: 10px 20px;
+  border: 0;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: monospace;
+}
+
+.profile-services li.djservices button:hover{
+  background-color: #bbbbbb;
+  cursor: pointer; 
+}
+
+.profile-services li label{
+  font-size: 20px;
+ 
+}
