@@ -1,0 +1,32 @@
+li.coreographer-services input,li.coreographer-services label,li.coreographer-services textarea{
+  display: block;
+  margin: 10px;
+  font-size: 14px;
+}
+
+li.coreographer-services input,li.coreographer-services textarea {
+  padding: 10px 16px;
+  width: 300px;
+  font-family: monospace;
+  border: none;
+}
+
+li.coreographer-services input:focus,li.coreographer-services textarea:focus {
+  background-color: #28333a;
+  color: #daebf5;
+}
+
+li.coreographer-services button{
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  transition: .5s all ease-in-out;
+}
+
+li.coreographer-services button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s all ease-in-out;
+}
