@@ -52,15 +52,18 @@
   border: 0;
   font-size: 16px;
   background-color: #fff;
+  border: rgb(0, 13, 20) solid 1px;
   font-family: monospace;
+  transition: .5s all ease-in-out;
 }
 
 .profile-services li.djservices button:hover{
-  background-color: #bbbbbb;
+  background-color: rgb(0, 13, 20);
+  color: #fff;
   cursor: pointer; 
+  transition: .5s all ease-in-out;
 }
 
 .profile-services li label{
   font-size: 20px;
- 
 }

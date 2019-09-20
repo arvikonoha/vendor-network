@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import ProfileSliderTracker from './profile-slider-tracker/ProfileSliderTracker'
 
 function ProfileSlider(){
   let pictureSourceArray=['./images/caterQuery1.jpg','./images/lightQuery1.jpg','./images/musicalQuery1.jpg','./images/photoQuery1.jpg']
@@ -12,6 +13,7 @@ function ProfileSlider(){
   function setCurrentPic(index){
     setPic(index)
   }
+
   return(
     <div class="profile-image">
     {
@@ -23,11 +25,7 @@ function ProfileSlider(){
     <div class="right-icon" onClick={nextPic}>
       <img src="./images/arrow.svg" width="35px"/>
     </div>
-    <div class="slide-tracker">
-    {
-      pictureSourceArray.map((item,index) => (index === currentPic)?<div key={index} onClick={setCurrentPic.bind(this,index)} onClick={setCurrentPic.bind(this,index)} class="slide-dot current"/>:<div  onClick={setCurrentPic.bind(this,index)} class="slide-dot"></div>)
-    }
-    </div>
+    <ProfileSliderTracker pictureSourceArray={pictureSourceArray} setCurrentPic={setCurrentPic} currentPic={currentPic} />
   </div>
   )
 }

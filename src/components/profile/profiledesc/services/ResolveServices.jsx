@@ -8,7 +8,7 @@ function ResolveServices({serviceText}){
   switch (serviceText){
     case 'photographer':  return <PhotoServices/>
     case 'caterer':  return <CaterServices/>
-    case 'musicals':  return <MusicalServices sub_category={"Coreographers"}/>
+    case 'musicals':  return <MusicalServices sub_category={"DJ"}/>
     case 'decorators': return <DecoratorServices/>
   }
 }

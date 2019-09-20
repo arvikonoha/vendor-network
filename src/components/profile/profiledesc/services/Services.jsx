@@ -5,7 +5,7 @@ import './services.css'
 function Services(){
   return(
     <div class="profile-services">
-      <ResolveServices serviceText={"musicals"} />
+      <ResolveServices serviceText={"caterer"} />
     </div>
   )
 }

@@ -1,0 +1,31 @@
+.slide-tracker{
+  display: flex;
+  justify-content: center;
+}
+
+.slide-tracker .slide-dot{
+  background-color: #f8f8f8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  border: #101010 2px solid; 
+  transition: all ease-in-out .5s;
+}
+
+.slide-tracker .slide-dot.current{
+  background-color: #101010;
+  transition: all ease-in-out .5s;
+}
+
+@media (max-width:600px){
+  .profile-images{
+    position: relative;
+    height: 365px;
+  }
+
+  .right-icon,.left-icon{
+    top: 40%;
+  }
+}
